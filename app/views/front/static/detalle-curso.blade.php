@@ -103,7 +103,7 @@ $(document).ready(function(){
       var course = data.items[0]
 
       $('#course').append(Mustache.render(couseTemplate, course));
-      $('#imagen').attr('src', course.imagen);
+      $('#imagen').attr('src', '/'+course.imagen);
       $('#modalTitle').html(course.nombre);
       $('#stemario').html(course.temario);
 
